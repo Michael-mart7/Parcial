@@ -1,0 +1,174 @@
+.hidden {
+    display: none;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('/Images/mapa.JPG.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra el contenido */
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.64);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input de búsqueda */
+input, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Solución específica para el botón */
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensaje de carga */
+#loading {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Resultados */
+#results {
+    margin-top: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Estilos para los resultados */
+#results p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+/* Recuadro flotante de información */
+.info-boxiz {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.527);
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.info-boxiz h3 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.info-boxiz p {
+    margin: 5px 0;
+}
+.info-boxder {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.527);
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
+}
+
+.info-boxder h3 {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.info-boxder p {
+    margin: 5px 0;
+}
+.datos-curiosos {
+    position: fixed;
+    bottom: 20px;
+    top: 110px;
+    left: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    display: none;
+    max-height: 200px; 
+}
+
+.boton-flotante {
+    position: fixed;
+    top: 60px;  
+    left: 60px; 
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

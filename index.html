@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta OpenStreetMap</title>
+    
+    
+    <link rel="stylesheet" href="/Css/Style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta con OpenStreetMap</h1>
+        <form id="searchForm">
+            <input type="text" id="query" placeholder="Ingrese una dirección o lugar" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="loading" class="hidden">Cargando...</div>
+        <div id="results"></div>
+        <div class="info-boxiz">
+            <h3>¿Qué es Lat y Lon?</h3>
+            <p><strong>Latitud (Lat):</strong> Indica qué tan al norte o sur está un punto en la Tierra.</p>
+            <p><strong>Longitud (Lon):</strong> Indica qué tan al este o oeste está un punto en la Tierra.</p>
+        </div>
+        <div class="info-boxder">
+            <h3>¿Y cómo me guío con Lat y Lon?</h3>
+            <p><strong>Latitud (Lat):</strong> Va de -90° (Sur) a 90° (Norte)</p>
+            <p><strong>Longitud (Lon):</strong> Va de -180° (Oeste) a 180° (Este) </p>
+            <h3><strong></strong> </h3>
+            <p><strong>Ejemplo en las coordenadas (19.4361, -99.0719):</strong> </p>
+            <p><strong>=19.4361 es la latitud (está en el hemisferio norte, porque es positiva).</strong>  </p>
+            <p><strong>=-99.0719 es la longitud (está en el hemisferio occidental, porque es negativo).</strong>  </p>
+
+        </div> 
+        <div id="datos-curiosos" class="datos-curiosos">
+            <h3>🌍 Datos Curiosos</h3>
+            <p id="dato-texto">El mapa de Babilonia, conocido como el Imago Mundi, es el mapa más antiguo del mundo y data del siglo VI a.C.</p>
+            <button id="siguiente-dato">Siguiente dato</button>
+        </div>
+        <button id="mostrar-datos" class="boton-flotante">ℹ️</button>
+    </div>
+    
+    <script src="/js/Parcial.js"></script>
+</body>
+</html>
